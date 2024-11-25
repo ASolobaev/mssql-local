@@ -1,0 +1,8 @@
+# Sensitive data
+.env
+
+# MSSQL data & logs
+mssql_data/
+
+# Configs
+docker-compose.*.yaml

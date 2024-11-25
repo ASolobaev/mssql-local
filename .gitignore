@@ -1,0 +1,5 @@
+# Sensitive data
+.env
+
+# MSSQL data & logs
+mssql_data/

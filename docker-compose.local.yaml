@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  database:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: "no"
+    env_file: ./.env
+    ports:
+      - "1433:${TCP_PORT:-1433}"
+    volumes:
+      - ./mssql_data/data:/var/opt/mssql/data
+      - ./mssql_data/log:/var/opt/mssql/log
+      - ./mssql_data/secrets:/var/opt/mssql/secrets
