@@ -36,3 +36,13 @@ sudo cat mssql_data/log/errorlog
 ## Возврат в исходное состояние
 
 Для сброса данных БД необходимо удалить содержимое подкатологов `mssql_data`
+
+
+## Запуск на Apple Silicon (M1, M2, M3)
+
+[StackOverflow](https://stackoverflow.com/questions/73937152/sql-server-not-running-inside-docker-in-m1-processor)
+
+* Install Ventura, the newest MacOS
+* Upgrade Docker to latest
+* Docker Settings > General: [X] Use virtualization framework and
+* Docker Settings > Features in Development: [X] Use Rosetta...
